@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Card from './components/Card'
+import Randomcolor from './Color'
 
 
 function App() {
@@ -14,11 +15,12 @@ function App() {
   
     return (
       <>
-      <h1 className="text-3xl font-bold bg-green-400 p-4 rounded-xl mb-4">
+      {/* <h1 className="text-3xl font-bold bg-green-400 p-4 rounded-xl mb-4">
       Tailwind test
-      </h1>
-      <Card username="Fenil" btnText="click Me"/>
-      <Card username='Dew Corp'/>
+      </h1> */}
+      {/* <Card username="Fenil" btnText="click Me"/>
+      <Card username='Dew Corp'/> */}
+      <Randomcolor/>
       </>
   )
 }
