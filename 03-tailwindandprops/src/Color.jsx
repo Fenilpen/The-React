@@ -1,22 +1,43 @@
+import { useState } from "react";
 
-
-function Randomcolor (){
-    function changecolor (color){
-        console.log(color);
-        document.body.style.backgroundColor = color
-    }
+function Color (){
+    const [color,setColor] = useState('purple')    
+   
     return(
-        <>
-        <h1 className="mb-4 font-semibold ">Random Color</h1>
-        <div className="flex flex-row-reverse space-x-2 space-x-reverse border- rounded-xl p-2 bg-white" >
-        <button className="bg-orange-400" onClick={()=>{changecolor('orange')}}>Orange</button>
-        <button className="bg-blue-400" onClick={()=>{changecolor('blue')}}>Blue</button>
-        <button className="bg-green-400" onClick={()=>{changecolor('green')}}>Green</button>
-        <button className="bg-red-400" onClick={()=>{changecolor('red')}}>Red</button>
-        <button className="bg-gray-400" onClick={()=>{changecolor('black')}}>Black</button>
+        <div className="w-full h-screen duration-200"
+        style={{backgroundColor: color}}>
+          <div className="fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2"> 
+            <div className="flex xlex-wrap justify-center
+            gap-3 shadow-lg bg-white px-3 py-2 rounded-xl">
+                <button
+                onClick={()=> setColor('red')}
+                className="outline-none px-4 py-1 rounded-xl text-white shadow-lg"
+                style={{backgroundColor: 'Red'}}
+                >Red</button>
+                <button
+                onClick={()=> setColor('orange')}
+                className="outline-none px-4 py-1 rounded-xl text-white shadow-lg"
+                style={{backgroundColor: 'Orange'}}
+                >Orange</button>
+                <button
+                onClick={()=> setColor('green')}
+                className="outline-none px-4 py-1 rounded-xl text-white shadow-lg"
+                style={{backgroundColor: 'green'}}
+                >Green</button>
+                <button
+                onClick={()=> setColor('blue')}
+                className="outline-none px-4 py-1 rounded-xl text-white shadow-lg"
+                style={{backgroundColor: 'Blue'}}
+                >Blue</button>
+                <button
+                onClick={()=> setColor('black')}
+                className="outline-none px-4 py-1 rounded-xl text-white shadow-lg"
+                style={{backgroundColor: 'black'}}
+                >Black</button>
+                </div>  
+          </div>  
         </div>
-        </>
     )
 }
+export default Color
 
-export default Randomcolor
