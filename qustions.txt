@@ -1,1 +1,14 @@
+react confution clearing qustions
 
+
+// notes about hooks
+
+// useCallback (memoizing): Think of it as a tool for memoizing functions. When you have functions that you pass down to child components, 
+// using useCallback ensures that the function reference stays the same unless its dependencies change. 
+// This helps in preventing unnecessary re-renders, optimizing performance.
+
+// useEffect (run): This is your go-to hook for running side effects like data fetching, updating the DOM, or setting up subscriptions. 
+// It runs after the component renders and can re-run based on the dependencies you specify.
+
+// So, while useCallback helps in keeping functions stable, 
+// useEffect is used to handle side effects that need to be executed after render.
