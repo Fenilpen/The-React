@@ -12,3 +12,17 @@ react confution clearing qustions
 
 // So, while useCallback helps in keeping functions stable, 
 // useEffect is used to handle side effects that need to be executed after render.
+
+// jsx syntex
+
+${}: Used within template literals in JavaScript to embed expressions.
+{}: Used in JSX (React) to embed JavaScript expressions.
+
+onChange={}: React event handler for changes in input fields.
+onClick={}: React event handler for click events.
+{label}: Accesses the label prop inside JSX.
+value={}: Binds a form element's value to a state variable.
+
+These attributes and the use of curly braces {} are specific to React and JSX syntax. They are not part of regular JavaScript or CSS.
+
+
