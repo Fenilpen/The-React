@@ -1,0 +1,26 @@
+in order to learn react context you need to understand what is props
+so here is the breaf 
+
+In React, "props" stands for properties and refers to a way of passing data from one component to another, 
+specifically from a parent component to a child component. Props are read-only, 
+meaning they cannot be modified by the child components that receive them; 
+their purpose is to allow components to share and reuse data.
+
+How it works: Props are passed into a component via attributes in JSX (JavaScript XML).
+Use case: They’re typically used to customize a component's behavior or appearance.
+
+exmaple:- 
+
+function Welcome(props) {
+  return <h1>Hello, {props.name}!</h1>;
+}
+
+function App() {
+  return <Welcome name="Fenil" />;
+}
+
+The App component passes a name prop with the value "Fenil" to the Welcome component.
+The Welcome component uses props.name to display "Hello, Fenil!"
+
+
+Props are an essential part of React because they enable components to be dynamic and reusable
