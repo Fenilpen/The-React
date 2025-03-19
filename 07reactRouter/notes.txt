@@ -1,0 +1,5 @@
+Here's a concise on a router in ReactJS:
+
+- Router in ReactJS: 
+
+It's part of the React Router library, used for handling navigation and routing in React applications. Routers allow developers to define routes for their app, linking components to specific URLs. This enables single-page apps to mimic traditional multi-page behavior without reloading the page.
